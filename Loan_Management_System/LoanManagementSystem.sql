@@ -6,7 +6,7 @@ CREATE TABLE Customer (
     emailAddress VARCHAR(255) UNIQUE NOT NULL,
     phoneNumber VARCHAR(15) NOT NULL,
     address TEXT,
-    creditScore INT CHECK 
+    creditScore INT CHECK (creditScore BETWEEN 300 AND 850)
 );
 Select*from customer
 
